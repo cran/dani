@@ -1,0 +1,4 @@
+export(sample.size.NI, simulations.modify.margin, figure.modify.margin, test.NI)
+importFrom("stats", "qnorm", "pnorm", "rbinom")
+importFrom("graphics", "abline", "lines", "plot")
+importFrom("Epi", "ci.pd")

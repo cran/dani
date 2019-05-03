@@ -1,0 +1,11 @@
+3de1c2fc8b65693df27711b7cc39e453 *DESCRIPTION
+ee1ba09327f8d1694b7d1e2d53a9c505 *NAMESPACE
+377c695027b5de02369a28a2a6bd3c30 *R/figure.modify.margin.R
+eec95d8dae08d3a14775cef346c38f5b *R/sample.size.NI.R
+72e0d47977c78f2fc9400725c8d8bb2f *R/simulations.modify.margin.R
+c09cdab136ab0e5603df00a3057a25c4 *R/test.NI.R
+23a2094a6cb560b1ea305322a8e3c2f1 *inst/CITATION
+a7e3a27ef77c9bd31268d9eb7d90fa71 *man/figure.modify.margin.Rd
+73f95d72d79ceb0b694c8b298fff5859 *man/sample.size.NI.Rd
+b3bdc240d5f933617c2dbf6fb7151639 *man/simulations.modify.margin.Rd
+04befa55a25c2eb6e8d5970577aef616 *man/test.NI.Rd
