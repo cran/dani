@@ -52,7 +52,7 @@ simulations.modify.margin <-
           sample.size.obs<-c(sample.size.obs, sample.size[1]+sample.size[2]-sample.size.obs)
           simulations[i,1,j]<-rbinom(1,sample.size.obs[1],pi0)
           simulations[i,2,j]<-rbinom(1,sample.size.obs[2],pi1)
-          simulations[i,5,j]<-test.NI(n0=sample.size.obs[1], n1=sample.size.obs[2], e0=simulations[i,1,j], e1=simulations[i,2,j], NIm=NI.marg, sig.level=sig.level.analysis, scale = scale, print.out=FALSE)$CI[2]
+          simulations[i,5,j]<-test.NI(n0=sample.size.obs[1], n1=sample.size.obs[2], e0=simulations[i,1,j], e1=simulations[i,2,j], NIm=NI.marg, sig.level=sig.level.analysis, scale = scale, print.out=FALSE)$CI[1]
           pio0<-simulations[i,1,j]/simulations[i,3,j]
           for (t in 1:length(thresholds)) {
             if ( scale == "RD" ) {
@@ -107,7 +107,7 @@ simulations.modify.margin <-
           simulations[i,2,j]<-rbinom(1,sample.size.obs[2],pi1)
           pio0<-simulations[i,1,j]/simulations[i,3,j]
           for (s in 1:length(sig.level.analysis)) {
-            simulations[i,5,j]<-test.NI(n0=sample.size.obs[1], n1=sample.size.obs[2], e0=simulations[i,1,j], e1=simulations[i,2,j], NIm=NI.marg, sig.level=sig.level.analysis[s], scale = scale, print.out=FALSE)$CI[2]
+            simulations[i,5,j]<-test.NI(n0=sample.size.obs[1], n1=sample.size.obs[2], e0=simulations[i,1,j], e1=simulations[i,2,j], NIm=NI.marg, sig.level=sig.level.analysis[s], scale = scale, print.out=FALSE)$CI[1]
             if ( scale == "RD" ) {
               NI.marg2<-ifelse(abs(p0.expected-pio0)>thresholds,
                                sin(asin(sqrt(pio0))+asin(sqrt(p1.tolerable))-asin(sqrt(p0.expected)))^2-pio0,
